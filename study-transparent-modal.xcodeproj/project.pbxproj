@@ -22,6 +22,7 @@
 		35D131241830B143001F31ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D131031830B143001F31ED /* UIKit.framework */; };
 		35D1312C1830B143001F31ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35D1312A1830B143001F31ED /* InfoPlist.strings */; };
 		35D1312E1830B143001F31ED /* study_transparent_modalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D1312D1830B143001F31ED /* study_transparent_modalTests.m */; };
+		35D131391830B764001F31ED /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D131381830B764001F31ED /* ModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		35D131291830B143001F31ED /* study-transparent-modalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "study-transparent-modalTests-Info.plist"; sourceTree = "<group>"; };
 		35D1312B1830B143001F31ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		35D1312D1830B143001F31ED /* study_transparent_modalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = study_transparent_modalTests.m; sourceTree = "<group>"; };
+		35D131371830B764001F31ED /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		35D131381830B764001F31ED /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				35D131181830B143001F31ED /* DetailViewController.m */,
 				35D1311A1830B143001F31ED /* Images.xcassets */,
 				35D131061830B143001F31ED /* Supporting Files */,
+				35D131371830B764001F31ED /* ModalViewController.h */,
+				35D131381830B764001F31ED /* ModalViewController.m */,
 			);
 			path = "study-transparent-modal";
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 			files = (
 				35D131101830B143001F31ED /* AppDelegate.m in Sources */,
 				35D131161830B143001F31ED /* MasterViewController.m in Sources */,
+				35D131391830B764001F31ED /* ModalViewController.m in Sources */,
 				35D1310C1830B143001F31ED /* main.m in Sources */,
 				35D131191830B143001F31ED /* DetailViewController.m in Sources */,
 			);

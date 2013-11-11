@@ -7,8 +7,8 @@
 //
 
 #import "MasterViewController.h"
-
 #import "DetailViewController.h"
+#import "ModalViewController.h"
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -29,7 +29,8 @@
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+    UIBarButtonItem *actionButon = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(showModal:)];
+    self.navigationItem.rightBarButtonItems = @[addButton, actionButon];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,6 +47,13 @@
     [_objects insertObject:[NSDate date] atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (void)showModal:(id)sender
+{
+    NSLog(@"%s",__func__);
+    UIViewController *modalViewController = [[self storyboard] instantiateViewControllerWithIdentifier:@"MODAL"];
+    [self presentViewController:modalViewController animated:YES completion:nil];
 }
 
 #pragma mark - Table View
